@@ -1,0 +1,429 @@
+/* Basic Reset & Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+header.hero {
+    /* background: linear-gradient(to right, #fbeec1, #f8c8dc); */
+    padding: 2rem;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+h1,
+h2,
+h3 {
+    margin-bottom: 0.75em;
+}
+
+h1 {
+    font-size: 2.8em;
+    font-weight: 900;
+    color: #3a3a3a;
+    /* Darker text for headings */
+}
+
+h2 {
+    font-size: 2em;
+    color: #006a71;
+    /* Teal color from image */
+}
+
+h3 {
+    font-size: 1.4em;
+    color: #3a3a3a;
+}
+
+.vpn {
+    font-size: 1.2em;
+    color: black;
+    margin-bottom: 20px;
+    font-size: 1.7em;
+    font-style: bold;
+}
+
+.day {
+
+    margin-top: 25px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #333;
+
+}
+
+a {
+    color: #007bff;
+    /* Standard link blue, adjust as needed */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    /* Rounded buttons */
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.arrow {
+    margin-left: 10px;
+}
+
+.btn-primary {
+    background-color: #0f866c;
+    /* Red color from image */
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #a7241c;
+    /* Darker red */
+}
+
+.btn-secondary {
+    background-color: #00838f;
+    /* Teal color from image */
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #006a71;
+    /* Darker teal */
+}
+
+
+/* Header & Nav */
+header {
+    background-color: #fdf6f0;
+    /* Light beige from image */
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+header nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    /* color: #c82e25; Red for logo */
+    color: #c9251c;
+}
+
+.lang-selector select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #fdf6f0;
+    /* Light beige from image */
+    padding: 60px 20px;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(image/homepage-pingzhu-hero-bg-opt-v2-3ce3022343c7ad918545a6a2e01f36b5.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content h1 {
+    margin-bottom: 0.3em;
+    font-size: 5em;
+    font-style: bold;
+    color: black;
+}
+
+.hero-content p .vpn {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+    /* color: #555; */
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 195px;
+}
+
+
+/* Features Grid Section */
+.features-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.feature {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.feature-item {
+  flex: 1 1 300px;
+  min-width: 280px;
+}
+
+.feature-icon img {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        /* Stack features on smaller screens */
+        gap: 30px;
+        padding: 40px 20px;
+    }
+
+    .devices {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .devices-text,
+    .devices-image {
+        min-width: auto;
+        /* Allow full width */
+    }
+
+
+    .benefits {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .benefit-item {
+        flex-basis: auto;
+        /* Allow full width */
+        width: 80%;
+        max-width: 350px;
+    }
+
+    .server-stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* advantage section */
+.advantages-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+.advantages-section .advantage {
+  display: inline-block;
+  width: 300px;
+  margin: 20px; /* gives spacing around boxes */
+  vertical-align: top;
+  text-align: center; /* center text inside each box */
+}
+
+
+.advantages-section .advantage img {
+    width: 250px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .advantages-section .advantage {
+    display: block;
+    margin: 20px auto;
+  }
+}
+
+.advantages-section h3 {
+    font-size: 20px;
+    color: #0a0a23;
+    margin-bottom: 10px;
+}
+
+.advantages-section p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.advantages-section .see-more {
+    margin-top: 40px;
+}
+
+.advantages-section .see-more a {
+    font-size: 14px;
+    color: #00b398;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.advantages-section .see-more a:hover {
+    text-decoration: underline;
+    color: #007bff;
+}
+
+.server-section {
+    /* background-color: #fef6f5; */
+     background-image: url('image/mapppp.jpg');
+    padding: 80px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 50px;
+    height: 100vh;
+    width: 100vw;
+    margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.server-container {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+}
+
+.server-container h2 {
+    font-size: 32px;
+    color: #0a0a23;
+    margin-bottom: 50px;
+}
+
+.server-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.map-bg {
+    /* width: 600px;
+    height: 400px; */
+    /* background-image: url('image/mapppp.jpg'); */
+    /* Replace with actual filename */
+    /* background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 50px;
+    height: 100vh;
+    width: 100vw; */
+}
+
+.server-stats {
+    background-color: #fef6f5;
+    /* background-image: url('image/mapppp.jpg'); */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 1100px;
+}
+
+.stat h3 {
+    font-size: 40px;
+    color: #0a0a23;
+    margin: 0;
+    background-color: #fef6f5;
+}
+
+.stat p {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+}
+
+.see-more {
+    margin-top: 50px;
+}
+
+.see-more a {
+    color: #00b398;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.see-more a:hover {
+    text-decoration: underline;
+}
